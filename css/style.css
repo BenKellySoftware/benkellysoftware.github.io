@@ -498,11 +498,20 @@ a {
   .resume-item .icon {
     display: block;
     margin-bottom: 50px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     position: relative;
     border-radius: 50%;
-    margin: 0 auto 20px auto; }
+    background-color: #bac964;
+    text-align: center; 
+    vertical-align: middle;
+    margin: 0 auto 20px auto; 
+    padding-top: 20px;
+  }
+      .resume-item .icon i {
+        font-size: 40px;
+        color: #333;
+      }
   .resume-item .banner {
     display: block;
     width: calc(100% + 60px);
