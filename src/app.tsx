@@ -1,6 +1,23 @@
 function App() {
+  const contacts = (
+    <div className="contacts">
+      <h2>Contacts</h2>
+      <ul className="text-sm font-semibold">
+        <li>
+          <a href={links.email} target="_blank">benkellysoftware@gmail.com</a>
+        </li>
+        <li>
+          <a href={links.github}>github.com/benkellysoftware</a>
+        </li>
+        <li>0450 580 772</li>
+      </ul>
+      <hr/>
+    </div>
+  )
+
   return (
-    <div className="w-screen animated-background bg-gradient-to-r from-blue-500 via-blue-500 to-indigo-500 overflow-y-scroll p-lg flex flex-col justify-center min-h-screen items-center">
+    <div
+      className="w-screen animated-background bg-gradient-to-r from-blue-500 via-blue-500 to-indigo-500 overflow-y-scroll p-lg flex flex-col justify-center min-h-screen items-center">
       {/*<div className="md:w-[860px] w-full p-lg text-xl">Hi I'm</div>*/}
       <div className="bg-white shadow-lg flex flex-col text-primary md:w-[860px] w-full md:aspect-a4">
         <div className="md:grid grid-cols-5 flex-grow">
@@ -11,6 +28,9 @@ function App() {
                 I am a software engineer and designer with 7+ years working in start-ups and consultancy. I have a
                 passion for building top-notch customer experiences.
               </div>
+            </div>
+            <div className="md:hidden">
+              {contacts}
             </div>
             <div className="work-experience">
               <h2>Work Experience</h2>
@@ -59,7 +79,10 @@ function App() {
             <hr/>
             <div className="education">
               <h2>Education</h2>
-              <h3>University of Technology Sydney - 2016-2021</h3>
+              <div className="flex justify-between">
+                <h3>University of Technology Sydney</h3>
+                <span>2016 - 2021</span>
+              </div>
               <ul>
                 <li>
                   Graduated First-Class Honours, Bachelor of Engineering in ICT (Software), Diploma in Engineering
@@ -72,19 +95,9 @@ function App() {
             </div>
           </div>
           <div className="sidebar col-span-2 bg-sidebar text-white p-lg">
-            <div className="contacts">
-              <h2>Contacts</h2>
-              <ul className="text-sm font-semibold">
-                <li>
-                  <a href={links.email} target="_blank">benkellysoftware@gmail.com</a>
-                </li>
-                <li>
-                  <a href={links.github}>github.com/benkellysoftware</a>
-                </li>
-                <li>0450 580 772</li>
-              </ul>
+            <div className="hidden md:block">
+              {contacts}
             </div>
-            <hr />
             <div className="skills">
               <h2>Skills</h2>
               <h3>User Experience</h3>
@@ -92,33 +105,33 @@ function App() {
                 <li>Development and usage of design systems</li>
                 <li>Branding and marketing alignment of white-labeled products</li>
                 <li>Persona creation, customer research, and user story mapping</li>
-                <li>Tools include: Figma, Miro, Affinity Designer</li>
+                <li>Figma, Miro, Affinity Designer</li>
               </ul>
-              <hr />
+              <hr/>
               <h3>Full Stack Engineering</h3>
               <ul>
                 <li>Web apps, APIs, internal tooling etc.</li>
                 <li>Cloud deployment and infra with AWS and Azure</li>
-                <li>Tools Include: Typescript, React, C#, Python, SQL</li>
+                <li>Typescript, React, C#, Python, SQL</li>
               </ul>
-              <hr />
-              <h3>Analytics and data visualisation</h3>
+              <hr/>
+              <h3>Analytics and Data Visualisation</h3>
               <ul>
                 <li>Experience building multiple projects with data analytics dashboards</li>
                 <li>Creation of bespoke charts and mapping software</li>
-                <li>PowerBI, D3, Highcharts, ArcGIS etc.</li>
+                <li>PowerBI, D3, Highcharts, ArcGIS</li>
               </ul>
-              <hr />
-              <h3>Agile project management</h3>
+              <hr/>
+              <h3>Agile Project Management</h3>
               <ul>
                 <li>Facilitation of agile ceremonies such as retros, backlog refinement, stand-ups etc.</li>
                 <li>Management of project management tools e.g. Jira, Azure Dev-ops, Github Projects etc.</li>
               </ul>
-              <hr />
+              <hr/>
               <h3>Game Engines and 3D Software</h3>
               <ul>
-                <li>Development of multiple projects and games in Unity, Unreal, and Godot</li>
-                <li>Development of edutainment and logistics software in Unity</li>
+                <li>Development of multiple games, educational, and logistics software</li>
+                <li>Unity, Unreal, and Godot</li>
               </ul>
             </div>
           </div>
