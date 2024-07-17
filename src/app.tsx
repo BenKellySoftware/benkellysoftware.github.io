@@ -1,19 +1,24 @@
 function App() {
   return (
-    <div className="w-screen animated-background bg-gradient-to-r from-blue-500 via-blue-500 to-indigo-500 overflow-y-scroll p-lg flex justify-center min-h-screen items-center">
+    <div className="w-screen animated-background bg-gradient-to-r from-blue-500 via-blue-500 to-indigo-500 overflow-y-scroll p-lg flex flex-col justify-center min-h-screen items-center">
+      {/*<div className="md:w-[860px] w-full p-lg text-xl">Hi I'm</div>*/}
       <div className="bg-white shadow-lg flex flex-col text-primary md:w-[860px] w-full md:aspect-a4">
-        <div className="md:grid grid-cols-5 gap-md flex-grow">
+        <div className="md:grid grid-cols-5 flex-grow">
           <div className="col-span-3 p-lg">
             <div className="header mb-lg">
               <h1>Ben Kelly</h1>
-              <div>
+              <div className="text-lg">
                 I am a software engineer and designer with 7+ years working in start-ups and consultancy. I have a
                 passion for building top-notch customer experiences.
               </div>
             </div>
             <div className="work-experience">
               <h2>Work Experience</h2>
-              <h3>McKinsey Build / Quantum Black - 2021-Present</h3>
+
+              <div className="flex justify-between">
+                <h3>McKinsey Build / Quantum Black</h3>
+                <span>2021 - Present</span>
+              </div>
               <ul>
                 <li>Software engineer and user experience specialist</li>
                 <li>
@@ -22,27 +27,36 @@ function App() {
                 </li>
                 <li>Lead developer on the Quantum Black design system and react component library</li>
               </ul>
-              <hr />
-              <h3>Hypothesis - 2020-2021</h3>
+              <hr/>
+              <div className="flex justify-between">
+                <h3>Hypothesis</h3>
+                <span>2020 - 2021</span>
+              </div>
               <ul>
-                <li>Software engineer</li>
-                <li>Acquired by McKinsey Digital in April 2021</li>
+                <li>Digital product consultancy</li>
+                <li>Acquired into McKinsey Build in April 2021</li>
               </ul>
-              <hr />
-              <h3>Caps Collective - 2019-Present</h3>
+              <hr/>
+              <div className="flex justify-between">
+                <h3>Caps Collective</h3>
+                <span>2019 - Present</span>
+              </div>
               <ul>
                 <li>Co-founder of Caps Collective in 2019, focused on open-source games and tooling</li>
-                <li>Released Fantasy Town Regional Manager on Steam in 2021</li>
-                <li>Listed in Kotaku AU’s top 10 Australian Games of 2021</li>
-                <li>Nominated for 2022 Australian Game Development Awards for Best Emerging Game</li>
+                <li>Released <a href={links.fantasyTown} target="_blank">Fantasy Town Regional Manager</a> on Steam in 2021</li>
+                <li>Featured in <a href={links.kotaku} target="_blank">Kotaku AU’s Top 10 Australian Games of 2021</a></li>
+                <li>Nominee for the 2022 <a href={links.agda} target="_blank">Australian Game Development Awards</a> for Best Emerging Game</li>
               </ul>
-              <hr />
-              <h3>Impulse Screen Media - 2016-2018</h3>
+              <hr/>
+              <div className="flex justify-between">
+                <h3>Impulse Screen Media</h3>
+                <span>2016 - 2018</span>
+              </div>
               <ul>
                 <li>Full-stack software engineer for an advertising analytics platform</li>
               </ul>
             </div>
-            <hr />
+            <hr/>
             <div className="education">
               <h2>Education</h2>
               <h3>University of Technology Sydney - 2016-2021</h3>
@@ -57,15 +71,15 @@ function App() {
               </ul>
             </div>
           </div>
-          <div className="col-span-2 bg-sidebar text-white p-lg">
+          <div className="sidebar col-span-2 bg-sidebar text-white p-lg">
             <div className="contacts">
               <h2>Contacts</h2>
               <ul className="text-sm font-semibold">
                 <li>
-                  <a href="mailto:benkellysoftware@gmail.com ">benkellysoftware@gmail.com</a>
+                  <a href={links.email} target="_blank">benkellysoftware@gmail.com</a>
                 </li>
                 <li>
-                  <a href="https://github.com/benkellysoftware">github.com/benkellysoftware</a>
+                  <a href={links.github}>github.com/benkellysoftware</a>
                 </li>
                 <li>0450 580 772</li>
               </ul>
@@ -92,13 +106,12 @@ function App() {
               <ul>
                 <li>Experience building multiple projects with data analytics dashboards</li>
                 <li>Creation of bespoke charts and mapping software</li>
-                <li>PowerBI, Tableau, D3, Highcharts, ArcGIS etc.</li>
-                <li></li>
+                <li>PowerBI, D3, Highcharts, ArcGIS etc.</li>
               </ul>
               <hr />
               <h3>Agile project management</h3>
               <ul>
-                <li>Facilitation of agile ceremonies e.g. Retros, backlog refinement, stand-ups etc.</li>
+                <li>Facilitation of agile ceremonies such as retros, backlog refinement, stand-ups etc.</li>
                 <li>Management of project management tools e.g. Jira, Azure Dev-ops, Github Projects etc.</li>
               </ul>
               <hr />
@@ -113,6 +126,15 @@ function App() {
       </div>
     </div>
   )
+}
+
+const links = {
+  email: "mailto:benkellysoftware@gmail.com",
+  github: "https://github.com/BenKellySoftware",
+  fantasyTown: "https://store.steampowered.com/app/1524530/Fantasy_Town_Regional_Manager/",
+  capsCollective: "https://capscollective.com",
+  agda: "https://agdas.com.au/2022-finalists-announced/",
+  kotaku: "https://kotaku.com.au/2021/12/best-australian-games-2021/"
 }
 
 export default App
