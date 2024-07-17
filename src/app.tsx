@@ -18,8 +18,7 @@ function App() {
   return (
     <div
       className="w-screen animated-background bg-gradient-to-r from-blue-500 via-blue-500 to-indigo-500 overflow-y-scroll p-lg flex flex-col justify-center min-h-screen items-center">
-      {/*<div className="md:w-[860px] w-full p-lg text-xl">Hi I'm</div>*/}
-      <div className="bg-white shadow-lg flex flex-col text-primary md:w-[860px] w-full md:aspect-a4">
+      <div className="bg-white shadow-lg flex flex-col text-primary md:w-[840px] w-full md:aspect-a4">
         <div className="md:grid grid-cols-5 flex-grow">
           <div className="col-span-3 p-lg">
             <div className="header mb-lg">
@@ -45,7 +44,7 @@ function App() {
                   Digital product design and development for clients in the financial, insurance, government, and retail
                   sectors
                 </li>
-                <li>Lead developer on the Quantum Black design system and react component library</li>
+                <li>Lead developer on the Quantum Black Design System, a react component library used for numerous internal and client projects</li>
               </ul>
               <hr/>
               <div className="flex justify-between">
@@ -53,7 +52,7 @@ function App() {
                 <span>2020 - 2021</span>
               </div>
               <ul>
-                <li>Digital product consultancy</li>
+                <li>Consultant for digital product development and capability uplift</li>
                 <li>Acquired into McKinsey Build in April 2021</li>
               </ul>
               <hr/>
@@ -124,8 +123,9 @@ function App() {
               <hr/>
               <h3>Agile Project Management</h3>
               <ul>
-                <li>Facilitation of agile ceremonies such as retros, backlog refinement, stand-ups etc.</li>
-                <li>Management of project management tools e.g. Jira, Azure Dev-ops, Github Projects etc.</li>
+                <li>Facilitation of agile ceremonies such as retros, backlog refinement, and stand-ups</li>
+                <li>Management of project management tools</li>
+                <li>Jira, Azure Dev-ops, Github Projects</li>
               </ul>
               <hr/>
               <h3>Game Engines and 3D Software</h3>
