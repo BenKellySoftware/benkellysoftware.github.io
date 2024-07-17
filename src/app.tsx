@@ -34,7 +34,7 @@ function App() {
             <div className="work-experience">
               <h2>Work Experience</h2>
 
-              <div className="flex justify-between">
+              <div className="flex justify-between flex-wrap">
                 <h3>McKinsey Build / Quantum Black</h3>
                 <span>2021 - Present</span>
               </div>
@@ -47,7 +47,7 @@ function App() {
                 <li>Lead developer on the Quantum Black Design System, a react component library used for numerous internal and client projects</li>
               </ul>
               <hr/>
-              <div className="flex justify-between">
+              <div className="flex justify-between flex-wrap">
                 <h3>Hypothesis</h3>
                 <span>2020 - 2021</span>
               </div>
@@ -56,7 +56,7 @@ function App() {
                 <li>Acquired into McKinsey Build in April 2021</li>
               </ul>
               <hr/>
-              <div className="flex justify-between">
+              <div className="flex justify-between flex-wrap">
                 <h3>Caps Collective</h3>
                 <span>2019 - Present</span>
               </div>
@@ -64,10 +64,10 @@ function App() {
                 <li>Co-founder of Caps Collective in 2019, focused on open-source games and tooling</li>
                 <li>Released <a href={links.fantasyTown} target="_blank">Fantasy Town Regional Manager</a> on Steam in 2021</li>
                 <li>Featured in <a href={links.kotaku} target="_blank">Kotaku AU’s Top 10 Australian Games of 2021</a></li>
-                <li>Nominee for the 2022 <a href={links.agda} target="_blank">Australian Game Development Awards</a> for Best Emerging Game</li>
+                <li>Nominee for the 2022 <a href={links.agda} target="_blank">Australian Game Development Awards</a> for Excellence In Emerging Games</li>
               </ul>
               <hr/>
-              <div className="flex justify-between">
+              <div className="flex justify-between flex-wrap">
                 <h3>Impulse Screen Media</h3>
                 <span>2016 - 2018</span>
               </div>
@@ -78,7 +78,7 @@ function App() {
             <hr/>
             <div className="education">
               <h2>Education</h2>
-              <div className="flex justify-between">
+              <div className="flex justify-between flex-wrap">
                 <h3>University of Technology Sydney</h3>
                 <span>2016 - 2021</span>
               </div>
