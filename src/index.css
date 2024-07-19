@@ -60,6 +60,9 @@ hr {
   border-bottom-color: #0b0b0b;
   margin: 20px 0;
 }
+.sidebar hr {
+  margin: 12px 0;
+}
 ul {
   /*list-style: disc;*/
   /*margin-left: 16px;*/
