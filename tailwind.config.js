@@ -23,9 +23,6 @@ export default {
       aspectRatio: {
         a4: "0.707",
       },
-      backgroundColor: {
-        sidebar: "#344054",
-      },
       colors: {
         "error": "#9C0013",
         "error-subtle": "#E5D0CE",
@@ -34,12 +31,8 @@ export default {
         "warning": "#D46600",
         "warning-subtle": "#F2D5B3",
       },
-      textColor: {
-        primary: "#000000",
-        secondary: "#344054",
-        tertiary: "#667085",
-        placeholder: "#D0D5DD",
-        disabled: "#667085",
+      screens: {
+        'print': { 'raw': 'print' },
       },
       spacing: {
         xs: "4px",
@@ -47,6 +40,13 @@ export default {
         md: "16px",
         lg: "24px",
         xl: "40px",
+      },
+      textColor: {
+        primary: "#000000",
+        secondary: "#344054",
+        tertiary: "#667085",
+        placeholder: "#D0D5DD",
+        disabled: "#667085",
       },
     },
   },

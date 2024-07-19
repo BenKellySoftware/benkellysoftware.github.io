@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 600;
 }
 h2 {
@@ -43,6 +43,7 @@ h2 {
 }
 h3 {
   font-size: 18px;
+  font-weight: 500;
 }
 h4 {
   font-size: 16px;
@@ -61,16 +62,52 @@ a:hover {
   color: #3e5c9a;
 }
 hr {
-  border-bottom-color: #0b0b0b;
-  margin: 20px 0;
-}
-.sidebar hr {
-  margin: 12px 0;
-}
-ul {
-  /*list-style: disc;*/
-  /*margin-left: 16px;*/
+  border-color: #D0D5DD;
+  margin: 12px 0 20px 0;
 }
 ul li {
-  margin-top: 4px;
+  margin-top: 8px;
+  font-weight: 300;
+}
+span {
+  font-size: 12px;
+}
+
+@keyframes rotate {
+  0 % {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.background {
+  background: #053a7d;
+}
+.sidebar {
+  background: #001235;
+}
+.paper {
+  background: #ffffff;
+}
+.out-top {
+  fill: #002855;
+  animation: rotate 100s linear infinite;
+  transform-origin: 13px 25px;
+}
+.in-top {
+  fill: #001233;
+  animation: rotate 80s linear infinite;
+  transform-origin: 13px 25px;
+}
+.out-bottom {
+  fill: #002045;
+  animation: rotate 100s linear infinite;
+  transform-origin: 84px 93px;
+}
+.in-bottom {
+  fill: #001233;
+  animation: rotate 80s linear infinite;
+  transform-origin: 84px 93px;
 }
