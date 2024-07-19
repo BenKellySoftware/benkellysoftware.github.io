@@ -39,7 +39,7 @@ function App() {
               <h1>Ben Kelly</h1>
               <div className="text-lg">
                 I am a software engineer and designer with 7+ years working in start-ups and consultancy. I have a
-                passion for building top-notch customer experiences.
+                passion for building top-notch user experiences.
               </div>
             </div>
             <div className="md:hidden">{contacts}</div>
