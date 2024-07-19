@@ -230,7 +230,6 @@ function App() {
               <h3>Game Engines and 3D Software</h3>
               <ul>
                 <li>Development of multiple games, educational, and logistics software</li>
-                <li>Unity, Unreal, and Godot</li>
               </ul>
               <div className="grid grid-cols-3 justify-center gap-md mt-md text-xs">
                 <div className="flex flex-col items-center">
