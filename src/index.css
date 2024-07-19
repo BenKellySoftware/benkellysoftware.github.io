@@ -48,6 +48,26 @@ h3 {
 h4 {
   font-size: 16px;
 }
+.download-pdf {
+  border: #007bff solid 1px;
+  border-radius: 4px;
+  padding: 4px 7px;
+  overflow: hidden;
+  transition: width 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 32px;
+  width: 32px;
+}
+.download-pdf:hover {
+  border-color: #3e5c9a;
+  width: 124px
+}
+.download-pdf span {
+  white-space: nowrap;
+  margin: 0 8px;
+}
 a {
   color: #007bff;
   cursor: pointer;
@@ -63,7 +83,7 @@ a:hover {
 }
 hr {
   border-color: #D0D5DD;
-  margin: 12px 0 20px 0;
+  margin: 12px 0 16px 0;
 }
 ul li {
   margin-top: 8px;

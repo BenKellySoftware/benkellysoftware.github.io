@@ -8,7 +8,7 @@ import {
   PythonLogo,
   TypescriptLogo
 } from "./icons"
-import { FaGithub, FaPhone, FaUnity } from "react-icons/fa6"
+import { FaGithub, FaLinkedinIn, FaPhone, FaUnity } from "react-icons/fa6"
 import { IoIosMail } from "react-icons/io"
 import { PiDatabaseFill } from "react-icons/pi"
 import { SiArcgis, SiGodotengine, SiJira, SiUnrealengine } from "react-icons/si"
@@ -21,34 +21,39 @@ function App() {
   const contacts = (
     <div className="contacts">
       <h2>Contacts</h2>
+      <div className="gap-sm items-center hidden print:flex">
+        <FaPhone/>
+        <a href="tel:+61450580772">0450 580 772</a>
+      </div>
       <div className="flex gap-sm items-center">
-        <IoIosMail />
+        <IoIosMail/>
         <a href={links.email} target="_blank">
           benkellysoftware@gmail.com
         </a>
       </div>
       <div className="flex gap-sm items-center">
-        <FaGithub />
+        <FaGithub/>
         <a href={links.github}>github.com/benkellysoftware</a>
       </div>
       <div className="flex gap-sm items-center">
-        <FaPhone />
-        <a href="tel:+61450580772">0450 580 772</a>
+        <FaLinkedinIn/>
+        <a href={links.linkedin} target="_blank">linkedin.com/in/ben-kelly-software</a>
       </div>
     </div>
   )
 
   return <>
-    <Background />
+    <Background/>
     <div className="w-screen min-h-screen p-md flex flex-col justify-center items-center md:p-lg print:p-0">
-      <div className="paper z-10 shadow-2xl print:shadow-none flex flex-col text-primary w-full md:aspect-a4 md:w-page print:w-screen print:h-screen">
+      <div
+        className="paper z-10 shadow-2xl print:shadow-none flex flex-col text-primary w-full md:aspect-a4 md:w-page print:w-screen print:h-screen">
         <div className="md:grid print:grid grid-cols-5 flex-grow">
           <div className="col-span-3 p-lg">
             <div className="header">
               <div className="flex justify-between items-center">
                 <h1>Ben Kelly</h1>
-                <a href={ResumePDF} download>
-                  <button className="border-black flex gap-sm items-center">Download PDF <BsDownload/></button>
+                <a href={ResumePDF} download className="print:hidden">
+                  <button className="download-pdf"><span>Download PDF</span><BsDownload style={{minWidth: 16, height: 16}} /></button>
                 </a>
               </div>
               <div className="text-lg">
@@ -269,6 +274,7 @@ function App() {
 const links = {
   email: "mailto:benkellysoftware@gmail.com",
   github: "https://github.com/BenKellySoftware",
+  linkedin: "https://linkedin.com/in/ben-kelly-software",
   fantasyTown: "https://store.steampowered.com/app/1524530/Fantasy_Town_Regional_Manager/",
   capsCollective: "https://capscollective.com",
   agda: "https://agdas.com.au/2022-finalists-announced/",
