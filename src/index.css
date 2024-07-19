@@ -24,6 +24,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;

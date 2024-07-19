@@ -31,7 +31,7 @@ function App() {
   )
 
   return (
-    <div className="w-screen animated-background bg-gradient-to-r from-blue-500 via-blue-500 to-indigo-500 overflow-y-scroll p-lg flex flex-col justify-center min-h-screen items-center">
+    <div className="w-screen animated-background bg-gradient-to-r from-blue-500 via-blue-500 to-indigo-500 p-lg flex flex-col justify-center min-h-screen items-center">
       <div className="bg-white shadow-lg flex flex-col text-primary md:w-[840px] w-full md:aspect-a4">
         <div className="md:grid grid-cols-5 flex-grow">
           <div className="col-span-3 p-lg">
