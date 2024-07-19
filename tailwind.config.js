@@ -8,6 +8,7 @@ export default {
       md: "900px",
       lg: "1280px",
       xl: "1440px",
+      print: { 'raw': 'print' },
     },
     fontSize: {
       "xxs": ["10px", "14px"],
@@ -31,15 +32,13 @@ export default {
         "warning": "#D46600",
         "warning-subtle": "#F2D5B3",
       },
-      screens: {
-        'print': { 'raw': 'print' },
-      },
       spacing: {
         xs: "4px",
         sm: "8px",
         md: "16px",
         lg: "24px",
         xl: "40px",
+        page: "860px",
       },
       textColor: {
         primary: "#000000",

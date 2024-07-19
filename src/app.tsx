@@ -14,6 +14,8 @@ import { PiDatabaseFill } from "react-icons/pi"
 import { SiArcgis, SiGodotengine, SiJira, SiUnrealengine } from "react-icons/si"
 import { VscAzureDevops } from "react-icons/vsc"
 import { Background } from "./background";
+import ResumePDF from "./Ben Kelly - Software Engineer and Games Developer.pdf"
+import { BsDownload } from "react-icons/bs";
 
 function App() {
   const contacts = (
@@ -38,18 +40,23 @@ function App() {
 
   return <>
     <Background />
-    <div className="w-screen min-h-screen p-md md:p-lg flex flex-col justify-center items-center">
-      <div className="paper z-10 shadow-2xl flex flex-col text-primary md:w-[860px] w-full md:aspect-a4">
-        <div className="md:grid grid-cols-5 flex-grow">
+    <div className="w-screen min-h-screen p-md flex flex-col justify-center items-center md:p-lg print:p-0">
+      <div className="paper z-10 shadow-2xl print:shadow-none flex flex-col text-primary w-full md:aspect-a4 md:w-page print:w-screen print:h-screen">
+        <div className="md:grid print:grid grid-cols-5 flex-grow">
           <div className="col-span-3 p-lg">
             <div className="header">
-              <h1>Ben Kelly</h1>
+              <div className="flex justify-between items-center">
+                <h1>Ben Kelly</h1>
+                <a href={ResumePDF} download>
+                  <button className="border-black flex gap-sm items-center">Download PDF <BsDownload/></button>
+                </a>
+              </div>
               <div className="text-lg">
                 I am a software engineer and designer with 7+ years working in start-ups and consultancy. I have a
                 passion for building top-notch user experiences.
               </div>
             </div>
-            <div className="md:hidden mt-lg">{contacts}</div>
+            <div className="md:hidden print:hidden mt-lg">{contacts}</div>
             <div className="work-experience mt-lg">
               <h2>Work Experience</h2>
 
@@ -141,10 +148,10 @@ function App() {
             </div>
           </div>
           <div className="sidebar col-span-2 text-white p-lg">
-            <div className="hidden md:block">{contacts}</div>
-            <div className="skills md:mt-lg">
+            <div className="hidden md:block print:block">{contacts}</div>
+            <div className="skills md:mt-lg print:mt-lg">
               <h2>Skills</h2>
-              <h3>User Experience</h3>
+              <h3>Experience Design</h3>
               <ul>
                 <li>Development and usage of design systems</li>
                 <li>Branding and marketing alignment of white-labeled products</li>
