@@ -113,7 +113,7 @@ function App() {
                   Created custom video editing software built on FFmpeg for ad collection, enabling the company to
                   outsource the process
                 </li>
-                <li>Physical installation and configuration of servers for remote management</li>
+                <li>On-site installation and configuration of servers for remote control</li>
               </ul>
             </div>
             <hr />
