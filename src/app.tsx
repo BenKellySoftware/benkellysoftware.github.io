@@ -58,7 +58,7 @@ function App() {
                 </li>
                 <li>
                   Worked in cross functional teams of engineers, designers, product owners, and strategy consultants to
-                  deliver in market solutions in under 6 months.
+                  deliver in market solutions in under 6 months
                 </li>
                 <li>
                   Lead developer on the Quantum Black Design System, a react component library used for numerous
@@ -125,7 +125,7 @@ function App() {
               </div>
               <ul>
                 <li>
-                  Graduated First-Class Honours, Bachelor of Engineering in ICT (Software), Diploma in Engineering
+                  Graduated First Class Honours, Bachelor of Engineering in ICT (Software), Diploma in Engineering
                   Practice
                 </li>
                 <li>President of the UTS Programmers Society 2019-2020</li>
