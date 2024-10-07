@@ -45,8 +45,7 @@ function App() {
   return <>
     <Background/>
     <div className="w-screen min-h-screen p-md flex flex-col justify-center items-center md:p-lg print:p-0">
-      <div
-        className="paper z-10 shadow-2xl print:shadow-none flex flex-col text-primary w-full md:aspect-a4 md:w-page print:w-screen print:h-screen">
+      <div className="bg-white z-10 flex flex-col text-primary w-full shadow-2xl print:shadow-none md:aspect-a4 md:w-page print:w-screen print:h-screen">
         <div className="md:grid print:grid grid-cols-5 flex-grow">
           <div className="col-span-3 p-lg">
             <div className="header">
@@ -57,12 +56,11 @@ function App() {
                 </a>
               </div>
               <div className="text-lg">
-                I am a software engineer and designer with 7+ years working in start-ups and consultancy. I have a
-                passion for building top-notch user experiences.
+                I'm an engineer and designer with 8+ years working in start-ups and consultancy and a passion for building top‑notch user experiences
               </div>
             </div>
-            <div className="md:hidden print:hidden mt-lg">{contacts}</div>
-            <div className="work-experience mt-lg">
+            <div className="md:hidden print:hidden mt-md">{contacts}</div>
+            <div className="work-experience mt-md">
               <h2>Work Experience</h2>
 
               <div className="flex justify-between flex-wrap">
@@ -70,28 +68,17 @@ function App() {
                 <span className="text-tertiary">2021 - Present</span>
               </div>
               <ul>
-                <li>Software engineer and user experience specialist</li>
                 <li>
-                  Digital product design and development for clients in the financial, insurance, government, and retail
-                  sectors
+                  Led development and client implementation of the react component library for the Quantum Black Design
+                  System
+                </li>
+                <li>
+                  Deployed production code in multiple industries such as finance, insurance, agriculture, and retail
                 </li>
                 <li>
                   Worked in cross functional teams of engineers, designers, product owners, and strategy consultants to
-                  deliver in market solutions in under 6 months
+                  deliver solutions in under 6 months
                 </li>
-                <li>
-                  Lead developer on the Quantum Black Design System, a react component library used for numerous
-                  internal and client projects
-                </li>
-              </ul>
-              <hr/>
-              <div className="flex justify-between flex-wrap">
-                <h3>Hypothesis</h3>
-                <span className="text-tertiary">2020 - 2021</span>
-              </div>
-              <ul>
-                <li>Consultant for digital product development and capability uplift</li>
-                <li>Acquired into McKinsey Build in April 2021</li>
               </ul>
               <hr/>
               <div className="flex justify-between flex-wrap">
@@ -99,13 +86,12 @@ function App() {
                 <span className="text-tertiary">2019 - Present</span>
               </div>
               <ul>
-                <li>Co-founder of Caps Collective, developing open-source games</li>
+                <li>Co-founded Caps Collective, managing a part-time team creating open-source games and software</li>
                 <li>
-                  {"Released "}
+                  {"Led development and design on the 3D city builder "}
                   <a href={links.fantasyTown} target="_blank">
                     Fantasy Town Regional Manager
                   </a>
-                  {" on Steam in 2021"}
                 </li>
                 <li>
                   {"Featured in "}
@@ -123,6 +109,17 @@ function App() {
               </ul>
               <hr/>
               <div className="flex justify-between flex-wrap">
+                <h3>Hypothesis</h3>
+                <span className="text-tertiary">2020 - 2021</span>
+              </div>
+              <ul>
+                <li>Simplified property development process for farmers by developing mapping software and codifying
+                  government legislation
+                </li>
+                <li>Developed team agility analytics tools for client development</li>
+              </ul>
+              <hr/>
+              <div className="flex justify-between flex-wrap">
                 <h3>Impulse Screen Media</h3>
                 <span className="text-tertiary">2016 - 2018</span>
               </div>
@@ -135,17 +132,15 @@ function App() {
                 <li>On-site installation and configuration of servers for remote control</li>
               </ul>
             </div>
-            <div className="education mt-lg">
+            <div className="education mt-md">
               <h2>Education</h2>
               <div className="flex justify-between flex-wrap">
-                <h3>University of Technology Sydney</h3>
+                <h3>Bachelor of Software Engineering</h3>
                 <span className="text-tertiary">2016 - 2021</span>
               </div>
               <ul>
-                <li>
-                  Graduated First Class Honours, Bachelor of Engineering in ICT (Software), Diploma in Engineering
-                  Practice
-                </li>
+                <li>Graduated first class honours from the University of Technology Sydney</li>
+                <li>Thesis on agile project management in user experience led projects</li>
                 <li>President of the UTS Programmers Society 2019-2020</li>
                 <li>Head of Publications for the UTS Engineering Society 2018</li>
                 <li>WiseTech Global Senior Programming Prize 2018 for C Fundamentals</li>
@@ -154,8 +149,27 @@ function App() {
           </div>
           <div className="sidebar col-span-2 text-white p-lg">
             <div className="hidden md:block print:block">{contacts}</div>
-            <div className="skills md:mt-lg print:mt-lg">
+            <div className="skills md:mt-md print:mt-md">
               <h2>Skills</h2>
+              <h3>Game Engines and 3D Software</h3>
+              <ul>
+                <li>Developed multiple games, edutainment and logistics software across multiple engines</li>
+              </ul>
+              <div className="grid grid-cols-3 justify-center gap-md mt-md text-xs">
+                <div className="flex flex-col items-center">
+                  <FaUnity className="h-lg w-lg"/>
+                  <span>Unity</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <SiUnrealengine className="h-lg w-lg"/>
+                  <span>Unreal</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <SiGodotengine className="h-lg w-lg" fill="rgb(88,138,187)"/>
+                  <span className="text-center">Godot</span>
+                </div>
+              </div>
+              <hr/>
               <h3>Experience Design</h3>
               <ul>
                 <li>Development and usage of design systems</li>
@@ -176,6 +190,26 @@ function App() {
                   <span className="text-center">Affinity Design</span>
                 </div>
               </div>
+              <hr/>
+              <h3>Agile Project Management</h3>
+              <ul>
+                <li>Facilitation of agile ceremonies such as retros, backlog refinement, and stand-ups</li>
+                <li>Administration and configuration of project management tools</li>
+                <div className="grid grid-cols-3 justify-center gap-md mt-md text-xs">
+                  <div className="flex flex-col items-center">
+                    <SiJira className="h-lg w-lg" fill="#0082FF"/>
+                    <span>Jira</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <VscAzureDevops className="h-lg w-lg" fill="#008AD7"/>
+                    <span>Azure DevOps</span>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <FaGithub className="h-lg w-lg"/>
+                    <span className="text-center">Github</span>
+                  </div>
+                </div>
+              </ul>
               <hr/>
               <h3>Full Stack Engineering</h3>
               <ul>
@@ -222,45 +256,6 @@ function App() {
                 <div className="flex flex-col items-center">
                   <SiArcgis className="h-lg w-lg" fill="rgb(75,130,230)"/>
                   <span className="text-center">ArcGIS</span>
-                </div>
-              </div>
-              <hr/>
-              <h3>Agile Project Management</h3>
-              <ul>
-                <li>Facilitation of agile ceremonies such as retros, backlog refinement, and stand-ups</li>
-                <li>Administration and configuration of project management tools</li>
-                <div className="grid grid-cols-3 justify-center gap-md mt-md text-xs">
-                  <div className="flex flex-col items-center">
-                    <SiJira className="h-lg w-lg" fill="#0082FF"/>
-                    <span>Jira</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <VscAzureDevops className="h-lg w-lg" fill="#008AD7"/>
-                    <span>Azure DevOps</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <FaGithub className="h-lg w-lg"/>
-                    <span className="text-center">Github</span>
-                  </div>
-                </div>
-              </ul>
-              <hr/>
-              <h3>Game Engines and 3D Software</h3>
-              <ul>
-                <li>Development of multiple games, as well as educational and logistics software</li>
-              </ul>
-              <div className="grid grid-cols-3 justify-center gap-md mt-md text-xs">
-                <div className="flex flex-col items-center">
-                  <FaUnity className="h-lg w-lg"/>
-                  <span>Unity</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <SiUnrealengine className="h-lg w-lg"/>
-                  <span>Unreal</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <SiGodotengine className="h-lg w-lg" fill="rgb(88,138,187)"/>
-                  <span className="text-center">Godot</span>
                 </div>
               </div>
             </div>
