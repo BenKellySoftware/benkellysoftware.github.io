@@ -37,7 +37,7 @@ export default {
         md: "16px",
         lg: "24px",
         xl: "40px",
-        page: "780px",
+        page: "768px",
       },
       textColor: {
         primary: "#000000",

@@ -19,8 +19,8 @@ import { BsDownload } from "react-icons/bs";
 
 function App() {
   const contacts = (
-    <div className="contacts">
-      <h2>Contacts</h2>
+    <div className="contacts text-sm">
+      <h2 className="mb-sm">Contacts</h2>
       <div className="gap-sm items-center hidden print:flex">
         <FaPhone/>
         <a href="tel:+61450580772">0450 580 772</a>
@@ -76,8 +76,8 @@ function App() {
                   Deployed production code in multiple industries such as finance, insurance, agriculture, and retail
                 </li>
                 <li>
-                  Worked in cross functional teams of engineers, designers, product owners, and strategy consultants to
-                  deliver solutions in under 6 months
+                  Worked in cross functional teams of engineers, designers, and product owners to
+                  deliver market ready solutions in 2-6 months
                 </li>
               </ul>
               <hr/>
@@ -86,30 +86,40 @@ function App() {
                 <span className="text-tertiary">2019 - Present</span>
               </div>
               <ul>
-                <li>Co-founded Caps Collective, managing a part-time team creating open-source games and software</li>
+                <li>
+                  {"Co-founded "}
+                  <a href={links.capsCollective} target="_blank">Caps Collective</a>
+                  {", managing a part-time team creating open-source games and software"}
+                </li>
                 <li>
                   {"Led development and design on the 3D city builder "}
                   <a href={links.fantasyTown} target="_blank">
                     Fantasy Town Regional Manager
                   </a>
-                </li>
-                <li>
-                  {"Featured in "}
+                  {", featured in "}
                   <a href={links.kotaku} target="_blank">
-                    Kotaku AU’s Top 10 Australian Games of 2021
+                    Kotaku AU’s Top 10 Australian Games
                   </a>
-                </li>
-                <li>
-                  {"Nominee for the 2022 "}
+                  {" and nominee for the "}
                   <a href={links.agda} target="_blank">
                     Australian Game Development Awards
                   </a>
                   {" for Excellence In Emerging Games"}
                 </li>
+                <li>
+                  {"Released the short-form narrative game "}
+                  <a href={links.hyet} target="_blank">
+                    Have You Eaten Yet?
+                  </a>
+                  {" in collaboration with "}
+                  <a href={links.hyetDigital} target="_blank">
+                    4A Digital
+                  </a>
+                </li>
               </ul>
               <hr/>
               <div className="flex justify-between flex-wrap">
-                <h3>Hypothesis</h3>
+              <h3>Hypothesis</h3>
                 <span className="text-tertiary">2020 - 2021</span>
               </div>
               <ul>
@@ -149,11 +159,11 @@ function App() {
           </div>
           <div className="sidebar col-span-2 text-white p-lg">
             <div className="hidden md:block print:block">{contacts}</div>
-            <div className="skills md:mt-md print:mt-md">
+            <div className="skills md:mt-sm print:mt-sm">
               <h2>Skills</h2>
-              <h3>Game Engines and 3D Software</h3>
+              <h3>Game Engines</h3>
               <ul>
-                <li>Developed multiple games, edutainment and logistics software across multiple engines</li>
+                <li>Design and development of games, edutainment, and logistics software across multiple engines</li>
               </ul>
               <div className="grid grid-cols-3 justify-center gap-md mt-md text-xs">
                 <div className="flex flex-col items-center">
@@ -274,6 +284,8 @@ const links = {
   capsCollective: "https://capscollective.com",
   agda: "https://agdas.com.au/2022-finalists-announced/",
   kotaku: "https://kotaku.com.au/2021/12/best-australian-games-2021/",
+  hyet: "https://capscollective.itch.io/have-you-eaten-yet",
+  hyetDigital: "https://4a.com.au/digital/"
 }
 
 export default App
