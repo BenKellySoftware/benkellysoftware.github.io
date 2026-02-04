@@ -20,7 +20,7 @@ import { BsDownload } from "react-icons/bs";
 function App() {
   const contacts = (
     <div className="contacts text-sm">
-      <h2 className="mb-sm">Contacts</h2>
+      <h2>Contacts</h2>
       <div className="gap-sm items-center hidden print:flex">
         <FaPhone/>
         <a href="tel:+61450580772">0450 580 772</a>
@@ -32,12 +32,12 @@ function App() {
         </a>
       </div>
       <div className="flex gap-sm items-center">
-        <FaGithub/>
-        <a href={links.github}>github.com/benkellysoftware</a>
-      </div>
-      <div className="flex gap-sm items-center">
         <FaLinkedinIn/>
         <a href={links.linkedin} target="_blank">linkedin.com/in/ben-kelly-software</a>
+      </div>
+      <div className="flex gap-sm items-center">
+        <FaGithub/>
+        <a href={links.github}>github.com/benkellysoftware</a>
       </div>
     </div>
   )
@@ -45,9 +45,9 @@ function App() {
   return <>
     <Background/>
     <div className="w-screen min-h-screen p-md flex flex-col justify-center items-center md:p-lg print:p-0">
-      <div className="bg-white z-10 flex flex-col text-primary w-full shadow-2xl print:shadow-none md:aspect-a4 md:w-page print:w-screen print:h-screen">
-        <div className="md:grid print:grid grid-cols-5 flex-grow">
-          <div className="col-span-3 p-lg">
+      <div className="bg-white z-10 flex flex-col text-primary w-full shadow-2xl print:shadow-none md:aspect-a4 md:w-page print:w-screen">
+        <div className="flex-grow">
+          <div className="p-lg">
             <div className="header">
               <div className="flex justify-between items-center">
                 <h1>Ben Kelly</h1>
@@ -56,31 +56,13 @@ function App() {
                 </a>
               </div>
               <div className="text-lg">
-                I'm an engineer and designer with 8+ years working in start-ups and consultancy and a passion for building top‑notch user experiences
+                I'm an engineer and designer with 10+ years working in software and games development, with a passion for building useful and unique experiences
               </div>
             </div>
-            <div className="md:hidden print:hidden mt-md">{contacts}</div>
+            <br/>
+            {contacts}
             <div className="work-experience mt-md">
               <h2>Work Experience</h2>
-
-              <div className="flex justify-between flex-wrap">
-                <h3>McKinsey Build / Quantum Black</h3>
-                <span className="text-tertiary">2021 - Present</span>
-              </div>
-              <ul>
-                <li>
-                  Led development and client implementation of the react component library for the Quantum Black Design
-                  System
-                </li>
-                <li>
-                  Deployed production code in multiple industries such as finance, insurance, agriculture, and retail
-                </li>
-                <li>
-                  Worked in cross functional teams of engineers, designers, and product owners to
-                  deliver market ready solutions in 2-6 months
-                </li>
-              </ul>
-              <hr/>
               <div className="flex justify-between flex-wrap">
                 <h3>Caps Collective</h3>
                 <span className="text-tertiary">2019 - Present</span>
@@ -119,6 +101,56 @@ function App() {
               </ul>
               <hr/>
               <div className="flex justify-between flex-wrap">
+                <h3>Big Sand</h3>
+                <span className="text-tertiary">2025 - Present</span>
+              </div>
+              <ul>
+                <li>
+                  {"Unreal development for "}
+                  <a href={links.bigSand} target="_blank">Big Sand</a>
+                  {", a virtual band utilising responsive audio and motion capture technology for their performances"}
+                </li>
+                <li>
+                  {"Developing networking solutions to connect audio, visual, and OSC control devices across the venue"}
+                </li>
+                <li>
+                  {"Lead developer on the Big Sand video game, utilising Unreal Metasounds to create responsive and dynamic audio"}
+                </li>
+              </ul>
+              <hr/>
+              <div className="flex justify-between flex-wrap">
+                <h3>NSW Department of Primary Industries</h3>
+                <span className="text-tertiary">2024 - 2025</span>
+              </div>
+              <ul>
+                <li>
+                  {"Contracted senior developer for "}
+                  <a href={links.myFarmPlanner} target="_blank">
+                    myFarmPlanner
+                  </a>
+                  {", a form and mapping tool for primary producers, from beta to release. The tool utilises ArcGIS with a legislation API for interactive drawing and realtime feedback"}
+                </li>
+              </ul>
+              <hr/>
+              <div className="flex justify-between flex-wrap">
+                <h3>McKinsey Build / Quantum Black</h3>
+                <span className="text-tertiary">2021 - 2024</span>
+              </div>
+              <ul>
+                <li>
+                  Worked in cross functional teams of engineers, designers, and product owners to
+                  deliver market ready solutions in 3-6 months
+                </li>
+                <li>
+                  Led development and client implementation of the react component library for the Quantum Black Design
+                  System
+                </li>
+                <li>
+                  Deployed production code in multiple industries such as finance, insurance, agriculture, and retail
+                </li>
+              </ul>
+              <hr/>
+              <div className="flex justify-between flex-wrap">
               <h3>Hypothesis</h3>
                 <span className="text-tertiary">2020 - 2021</span>
               </div>
@@ -142,6 +174,7 @@ function App() {
                 <li>On-site installation and configuration of servers for remote control</li>
               </ul>
             </div>
+            <div className="page-break"/>
             <div className="education mt-md">
               <h2>Education</h2>
               <div className="flex justify-between flex-wrap">
@@ -157,22 +190,21 @@ function App() {
               </ul>
             </div>
           </div>
-          <div className="sidebar col-span-2 text-white p-lg">
-            <div className="hidden md:block print:block">{contacts}</div>
+          <div className="sidebar text-white p-lg">
             <div className="skills md:mt-sm print:mt-sm">
-              <h2>Skills</h2>
+              <h2 className="mb-sm">Skills</h2>
               <h3>Game Engines</h3>
               <ul>
-                <li>Design and development of games, edutainment, and logistics software across multiple engines</li>
+                <li>Design and development of games, live production, and logistics software across multiple engines</li>
               </ul>
-              <div className="grid grid-cols-3 justify-center gap-md mt-md text-xs">
-                <div className="flex flex-col items-center">
-                  <FaUnity className="h-lg w-lg"/>
-                  <span>Unity</span>
-                </div>
+              <div className="skills-icons grid grid-cols-3 justify-center gap-md mt-md text-xs">
                 <div className="flex flex-col items-center">
                   <SiUnrealengine className="h-lg w-lg"/>
                   <span>Unreal</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <FaUnity className="h-lg w-lg"/>
+                  <span>Unity</span>
                 </div>
                 <div className="flex flex-col items-center">
                   <SiGodotengine className="h-lg w-lg" fill="rgb(88,138,187)"/>
@@ -186,7 +218,7 @@ function App() {
                 <li>Branding and marketing alignment of white-labeled products</li>
                 <li>Persona creation, customer research, and user story mapping</li>
               </ul>
-              <div className="grid grid-cols-3 justify-center gap-md mt-md text-xs">
+              <div className="skills-icons grid grid-cols-3 justify-center gap-md mt-md text-xs">
                 <div className="flex flex-col items-center">
                   <FigmaIcon className="h-lg"/>
                   <span>Figma</span>
@@ -205,7 +237,7 @@ function App() {
               <ul>
                 <li>Facilitation of agile ceremonies such as retros, backlog refinement, and stand-ups</li>
                 <li>Administration and configuration of project management tools</li>
-                <div className="grid grid-cols-3 justify-center gap-md mt-md text-xs">
+                <div className="skills-icons grid grid-cols-3 justify-center gap-md mt-md text-xs">
                   <div className="flex flex-col items-center">
                     <SiJira className="h-lg w-lg" fill="#0082FF"/>
                     <span>Jira</span>
@@ -226,7 +258,7 @@ function App() {
                 <li>Flexible solutions such as web apps, APIs, and internal tooling</li>
                 <li>Cloud deployment with AWS and Azure</li>
               </ul>
-              <div className="grid grid-cols-4 justify-center gap-md mt-md text-xs">
+              <div className="skills-icons grid grid-cols-4 justify-center gap-md mt-md text-xs">
                 <div className="flex flex-col items-center">
                   <TypescriptLogo className="h-lg"/>
                   <span>Typescript</span>
@@ -250,7 +282,7 @@ function App() {
                 <li>Creation of data analytics dashboards</li>
                 <li>Building bespoke charts and mapping software using spatial data APIs</li>
               </ul>
-              <div className="grid grid-cols-4 justify-center gap-md mt-md text-xs">
+              <div className="skills-icons grid grid-cols-4 justify-center gap-md mt-md text-xs">
                 <div className="flex flex-col items-center">
                   <PowerBiLogo className="h-lg"/>
                   <span>PowerBI</span>
@@ -285,7 +317,9 @@ const links = {
   agda: "https://agdas.com.au/2022-finalists-announced/",
   kotaku: "https://kotaku.com.au/2021/12/best-australian-games-2021/",
   hyet: "https://capscollective.itch.io/have-you-eaten-yet",
-  hyetDigital: "https://4a.com.au/digital/"
+  hyetDigital: "https://4a.com.au/digital/",
+  bigSand: "https://bigSand.band",
+  myFarmPlanner: "https://www.nsw.gov.au/ministerial-releases/new-planning-tool-to-fast-track-da-process-when-building-key-on-farm-infrastructure"
 }
 
 export default App
