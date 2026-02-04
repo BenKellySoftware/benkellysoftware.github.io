@@ -82,7 +82,7 @@ function App() {
                   <a href={links.kotaku} target="_blank">
                     Kotaku AU’s Top 10 Australian Games
                   </a>
-                  {" and nominee for the "}
+                  {" and nominated for the "}
                   <a href={links.agda} target="_blank">
                     Australian Game Development Awards
                   </a>
@@ -108,10 +108,10 @@ function App() {
                 <li>
                   {"Unreal development for "}
                   <a href={links.bigSand} target="_blank">Big Sand</a>
-                  {", a virtual band utilising responsive audio and motion capture technology for their performances"}
+                  {", a virtual band utilising audio and motion capture technology for their performances"}
                 </li>
                 <li>
-                  {"Developing networking solutions to connect audio, visual, and OSC control devices across the venue"}
+                  {"Developed networking solutions to connect audio, visual, and OSC control devices across the venue"}
                 </li>
                 <li>
                   {"Lead developer on the Big Sand video game, utilising Unreal Metasounds to create responsive and dynamic audio"}
@@ -128,8 +128,9 @@ function App() {
                   <a href={links.myFarmPlanner} target="_blank">
                     myFarmPlanner
                   </a>
-                  {", a form and mapping tool for primary producers, from beta to release. The tool utilises ArcGIS with a legislation API for interactive drawing and realtime feedback"}
+                  {", a form and mapping tool for primary producers, from beta to release"}
                 </li>
+                <li>The tool utilises ArcGIS with a legislation API for interactive drawing and realtime feedback</li>
               </ul>
               <hr/>
               <div className="flex justify-between flex-wrap">
@@ -138,15 +139,15 @@ function App() {
               </div>
               <ul>
                 <li>
-                  Worked in cross functional teams of engineers, designers, and product owners to
+                  Worked as a software developer in cross functional teams of engineers, designers, and product owners to
                   deliver market ready solutions in 3-6 months
                 </li>
                 <li>
-                  Led development and client implementation of the react component library for the Quantum Black Design
-                  System
+                  Deployed production code in multiple industries such as finance, insurance, agriculture, and retail
                 </li>
                 <li>
-                  Deployed production code in multiple industries such as finance, insurance, agriculture, and retail
+                  Led development and client implementation of the React component library for the Quantum Black Design
+                  System
                 </li>
               </ul>
               <hr/>
@@ -155,10 +156,10 @@ function App() {
                 <span className="text-tertiary">2020 - 2021</span>
               </div>
               <ul>
-                <li>Simplified property development process for farmers by developing mapping software and codifying
+                <li>Built web form and mapping tool to simplify the property development process for farmers by codifying
                   government legislation
                 </li>
-                <li>Developed team agility analytics tools for client development</li>
+                <li>Developed team agility analytics data capture and visualisation tools with Highcharts and D3</li>
               </ul>
               <hr/>
               <div className="flex justify-between flex-wrap">
@@ -182,7 +183,7 @@ function App() {
                 <span className="text-tertiary">2016 - 2021</span>
               </div>
               <ul>
-                <li>Graduated first class honours from the University of Technology Sydney</li>
+                <li>Graduated with first class honours from the University of Technology Sydney</li>
                 <li>Thesis on agile project management in user experience led projects</li>
                 <li>President of the UTS Programmers Society 2019-2020</li>
                 <li>Head of Publications for the UTS Engineering Society 2018</li>
@@ -214,9 +215,9 @@ function App() {
               <hr/>
               <h3>Experience Design</h3>
               <ul>
-                <li>Development and usage of design systems</li>
-                <li>Branding and marketing alignment of white-labeled products</li>
-                <li>Persona creation, customer research, and user story mapping</li>
+                <li>Creation of user interfaces for games and web, with a focus on accessibility and responsiveness</li>
+                <li>Development and usage of design systems, with branding and marketing alignment of white-labeled products</li>
+                <li>Design discovery processes such as persona creation, customer research, and user story mapping</li>
               </ul>
               <div className="skills-icons grid grid-cols-3 justify-center gap-md mt-md text-xs">
                 <div className="flex flex-col items-center">
@@ -255,8 +256,8 @@ function App() {
               <hr/>
               <h3>Full Stack Engineering</h3>
               <ul>
-                <li>Flexible solutions such as web apps, APIs, and internal tooling</li>
-                <li>Cloud deployment with AWS and Azure</li>
+                <li>End to end development of solutions such as web apps, APIs, and internal tooling</li>
+                <li>Production cloud deployment with AWS and Azure</li>
               </ul>
               <div className="skills-icons grid grid-cols-4 justify-center gap-md mt-md text-xs">
                 <div className="flex flex-col items-center">
@@ -279,7 +280,7 @@ function App() {
               <hr/>
               <h3>Analytics and Data Visualisation</h3>
               <ul>
-                <li>Creation of data analytics dashboards</li>
+                <li>Creation of data analytics dashboards for internal and external use</li>
                 <li>Building bespoke charts and mapping software using spatial data APIs</li>
               </ul>
               <div className="skills-icons grid grid-cols-4 justify-center gap-md mt-md text-xs">
