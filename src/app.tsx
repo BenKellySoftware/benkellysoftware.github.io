@@ -16,6 +16,7 @@ import { VscAzureDevops } from "react-icons/vsc"
 import { Background } from "./background";
 import ResumePDF from "./Ben Kelly - Software Engineer and Games Developer.pdf"
 import { BsDownload } from "react-icons/bs";
+import { MdSmartDisplay } from "react-icons/md";
 
 function App() {
   const contacts = (
@@ -51,9 +52,20 @@ function App() {
             <div className="header">
               <div className="flex justify-between items-center">
                 <h1>Ben Kelly</h1>
-                <a href={ResumePDF} download className="print:hidden">
-                  <button className="download-pdf"><span>Download PDF</span><BsDownload style={{minWidth: 16, height: 16}} /></button>
-                </a>
+                <div className="flex gap-sm">
+                  <a href={links.portfolio} download>
+                    <button className="expand-btn portfolio-btn">
+                      <span>Video Portfolio</span>
+                      <MdSmartDisplay style={{minWidth: 16, height: 16}} />
+                    </button>
+                  </a>
+                  <a href={ResumePDF} download className="print:hidden">
+                    <button className="expand-btn download-pdf">
+                      <span>Download PDF</span>
+                      <BsDownload style={{minWidth: 16, height: 16}} />
+                    </button>
+                  </a>
+                </div>
               </div>
               <div className="text-lg">
                 I'm an engineer and designer with 10+ years working in software and games development, with a passion for building useful and unique experiences
@@ -310,6 +322,7 @@ function App() {
 }
 
 const links = {
+  portfolio: "https://www.youtube.com/playlist?list=PLY91QoioiXBDvCxbxd4nM3egtxvTJ1z5u",
   email: "mailto:benkellysoftware@gmail.com",
   github: "https://github.com/BenKellySoftware",
   linkedin: "https://linkedin.com/in/ben-kelly-software",
