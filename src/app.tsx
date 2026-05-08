@@ -22,23 +22,21 @@ function App() {
   const contacts = (
     <div className="contacts text-sm">
       <h2>Contacts</h2>
-      <div className="gap-sm items-center hidden print:flex">
-        <FaPhone/>
-        <a href="tel:+61450580772">0450 580 772</a>
-      </div>
-      <div className="flex gap-sm items-center">
-        <IoIosMail/>
-        <a href={links.email} target="_blank">
-          benkellysoftware@gmail.com
-        </a>
-      </div>
-      <div className="flex gap-sm items-center">
-        <FaLinkedinIn/>
-        <a href={links.linkedin} target="_blank">linkedin.com/in/ben-kelly-software</a>
-      </div>
-      <div className="flex gap-sm items-center">
-        <FaGithub/>
-        <a href={links.github}>github.com/benkellysoftware</a>
+      <div className="flex justify-between">
+        <div className="flex gap-sm items-center">
+          <IoIosMail/>
+          <a href={links.email} target="_blank">
+            benkellysoftware@gmail.com
+          </a>
+        </div>
+        <div className="gap-sm items-center flex">
+          <FaPhone/>
+          <a href="tel:+61450580772">0450 580 772</a>
+        </div>
+        <div className="flex gap-sm items-center">
+          <FaLinkedinIn/>
+          <a href={links.linkedin} target="_blank">linkedin.com/in/ben-kelly-software</a>
+        </div>
       </div>
     </div>
   )
@@ -52,14 +50,14 @@ function App() {
             <div className="header">
               <div className="flex justify-between items-center">
                 <h1>Ben Kelly</h1>
-                <div className="flex gap-sm">
+                <div className="flex gap-sm print:hidden">
                   <a href={links.portfolio} download>
                     <button className="expand-btn portfolio-btn">
                       <span>Video Portfolio</span>
                       <MdSmartDisplay style={{minWidth: 16, height: 16}} />
                     </button>
                   </a>
-                  <a href={ResumePDF} download className="print:hidden">
+                  <a href={ResumePDF} download>
                     <button className="expand-btn download-pdf">
                       <span>Download PDF</span>
                       <BsDownload style={{minWidth: 16, height: 16}} />
@@ -67,9 +65,7 @@ function App() {
                   </a>
                 </div>
               </div>
-              <div className="text-lg">
-                I'm an engineer and designer with 10+ years working in software and games development, with a passion for building useful and unique experiences
-              </div>
+              <div className="text-lg">I am a freelance software engineer and game designer looking for casual work that will allow me to engage with my community</div>
             </div>
             <br/>
             {contacts}
@@ -81,53 +77,13 @@ function App() {
               </div>
               <ul>
                 <li>
-                  {"Co-founded "}
-                  <a href={links.capsCollective} target="_blank">Caps Collective</a>
-                  {", managing a part-time team creating open-source games and software"}
-                </li>
-                <li>
-                  {"Led development and design on the 3D city builder "}
-                  <a href={links.fantasyTown} target="_blank">
-                    Fantasy Town Regional Manager
+                  {"Co-founder of "}
+                  <a href={links.capsCollective} target="_blank">
+                    Caps Collective
                   </a>
-                  {", featured in "}
-                  <a href={links.kotaku} target="_blank">
-                    Kotaku AU’s Top 10 Australian Games
-                  </a>
-                  {" and nominated for the "}
-                  <a href={links.agda} target="_blank">
-                    Australian Game Development Awards
-                  </a>
-                  {" for Excellence In Emerging Games"}
-                </li>
-                <li>
-                  {"Released the short-form narrative game "}
-                  <a href={links.hyet} target="_blank">
-                    Have You Eaten Yet?
-                  </a>
-                  {" in collaboration with "}
-                  <a href={links.hyetDigital} target="_blank">
-                    4A Digital
-                  </a>
-                </li>
-              </ul>
-              <hr/>
-              <div className="flex justify-between flex-wrap">
-                <h3>Big Sand</h3>
-                <span className="text-tertiary">2025 - Present</span>
-              </div>
-              <ul>
-                <li>
-                  {"Unreal development for "}
-                  <a href={links.bigSand} target="_blank">Big Sand</a>
-                  {", a virtual band utilising audio and motion capture technology for their performances"}
-                </li>
-                <li>
-                  {"Developed networking solutions to connect audio, visual, and OSC control devices across the venue"}
-                </li>
-                <li>
-                  {"Lead developer on the Big Sand video game, utilising Unreal Metasounds to create responsive and dynamic audio"}
-                </li>
+                  {", a brand for the creation of games and interactive software"}</li>
+                <li>Management of teams of 3-8 across multiple ongoing projects</li>
+                <li>Freelance business development finding new clients</li>
               </ul>
               <hr/>
               <div className="flex justify-between flex-wrap">
@@ -136,13 +92,13 @@ function App() {
               </div>
               <ul>
                 <li>
-                  {"Contracted senior developer for "}
+                  {"Designed and created mapping and form software for an agricultural development tool "}
                   <a href={links.myFarmPlanner} target="_blank">
                     myFarmPlanner
                   </a>
-                  {", a form and mapping tool for primary producers, from beta to release"}
                 </li>
-                <li>The tool utilises ArcGIS with a legislation API for interactive drawing and realtime feedback</li>
+                <li>Conducting outreach interviews with farmers in regional NSW</li>
+                <li>myFarmPlanner won the Planning Institute of Australia's 2025 Award for Planning Excellence</li>
               </ul>
               <hr/>
               <div className="flex justify-between flex-wrap">
@@ -157,10 +113,7 @@ function App() {
                 <li>
                   Deployed production code in multiple industries such as finance, insurance, agriculture, and retail
                 </li>
-                <li>
-                  Led development and client implementation of the React component library for the Quantum Black Design
-                  System
-                </li>
+                <li>Performed data cleanup and analysis on large databases</li>
               </ul>
               <hr/>
               <div className="flex justify-between flex-wrap">
@@ -168,10 +121,8 @@ function App() {
                 <span className="text-tertiary">2020 - 2021</span>
               </div>
               <ul>
-                <li>Built web form and mapping tool to simplify the property development process for farmers by codifying
-                  government legislation
-                </li>
-                <li>Developed team agility analytics data capture and visualisation tools with Highcharts and D3</li>
+                <li>Built web forms and mapping tools for our clients including NSW DPIRD and Service NSW</li>
+                <li>Creation and usage of internal survey tools to conduct team assessments for our clients based in PowerBI</li>
               </ul>
               <hr/>
               <div className="flex justify-between flex-wrap">
@@ -180,14 +131,9 @@ function App() {
               </div>
               <ul>
                 <li>Full-stack software engineer for an advertising analytics platform</li>
-                <li>
-                  Created custom video editing software built on FFmpeg for ad collection, enabling the company to
-                  outsource the process
-                </li>
                 <li>On-site installation and configuration of servers for remote control</li>
               </ul>
             </div>
-            <div className="page-break"/>
             <div className="education mt-md">
               <h2>Education</h2>
               <div className="flex justify-between flex-wrap">
@@ -196,123 +142,11 @@ function App() {
               </div>
               <ul>
                 <li>Graduated with first class honours from the University of Technology Sydney</li>
-                <li>Thesis on agile project management in user experience led projects</li>
-                <li>President of the UTS Programmers Society 2019-2020</li>
-                <li>Head of Publications for the UTS Engineering Society 2018</li>
-                <li>WiseTech Global Senior Programming Prize 2018 for C Fundamentals</li>
+                <li>President of the UTS Programmers Society 2019 & 2020, hosting workshops and community events with up to 150 attendees, including budgeting and securing grants</li>
+                <li>Head of Publications for the UTS Engineering Society 2018, creating outreach material for students</li>
+                <li>WiseTech Global Senior Programming Prize for being the top in class for C Fundamentals 2018</li>
+                <li>UTS Dean's list 2020 & 2021 for outstanding student performance based on academic achievement</li>
               </ul>
-            </div>
-          </div>
-          <div className="sidebar text-white p-lg">
-            <div className="skills md:mt-sm print:mt-sm">
-              <h2 className="mb-sm">Skills</h2>
-              <h3>Game Engines</h3>
-              <ul>
-                <li>Design and development of games, live production, and logistics software across multiple engines</li>
-              </ul>
-              <div className="skills-icons grid grid-cols-3 justify-center gap-md mt-md text-xs">
-                <div className="flex flex-col items-center">
-                  <SiUnrealengine className="h-lg w-lg"/>
-                  <span>Unreal</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <FaUnity className="h-lg w-lg"/>
-                  <span>Unity</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <SiGodotengine className="h-lg w-lg" fill="rgb(88,138,187)"/>
-                  <span className="text-center">Godot</span>
-                </div>
-              </div>
-              <hr/>
-              <h3>Experience Design</h3>
-              <ul>
-                <li>Creation of user interfaces for games and web, with a focus on accessibility and responsiveness</li>
-                <li>Development and usage of design systems, with branding and marketing alignment of white-labeled products</li>
-                <li>Design discovery processes such as persona creation, customer research, and user story mapping</li>
-              </ul>
-              <div className="skills-icons grid grid-cols-3 justify-center gap-md mt-md text-xs">
-                <div className="flex flex-col items-center">
-                  <FigmaIcon className="h-lg"/>
-                  <span>Figma</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <MiroIcon className="h-lg"/>
-                  <span>Miro</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <AffinityLogo className="h-lg"/>
-                  <span className="text-center">Affinity Design</span>
-                </div>
-              </div>
-              <hr/>
-              <h3>Agile Project Management</h3>
-              <ul>
-                <li>Facilitation of agile ceremonies such as retros, backlog refinement, and stand-ups</li>
-                <li>Administration and configuration of project management tools</li>
-                <div className="skills-icons grid grid-cols-3 justify-center gap-md mt-md text-xs">
-                  <div className="flex flex-col items-center">
-                    <SiJira className="h-lg w-lg" fill="#0082FF"/>
-                    <span>Jira</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <VscAzureDevops className="h-lg w-lg" fill="#008AD7"/>
-                    <span>Azure DevOps</span>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <FaGithub className="h-lg w-lg"/>
-                    <span className="text-center">Github</span>
-                  </div>
-                </div>
-              </ul>
-              <hr/>
-              <h3>Full Stack Engineering</h3>
-              <ul>
-                <li>End to end development of solutions such as web apps, APIs, and internal tooling</li>
-                <li>Production cloud deployment with AWS and Azure</li>
-              </ul>
-              <div className="skills-icons grid grid-cols-4 justify-center gap-md mt-md text-xs">
-                <div className="flex flex-col items-center">
-                  <TypescriptLogo className="h-lg"/>
-                  <span>Typescript</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <CSharpLogo className="h-lg"/>
-                  <span>C#</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <PythonLogo className="h-lg"/>
-                  <span className="text-center">Python</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <PiDatabaseFill className="w-lg h-lg"/>
-                  <span className="text-center">Databases</span>
-                </div>
-              </div>
-              <hr/>
-              <h3>Analytics and Data Visualisation</h3>
-              <ul>
-                <li>Creation of data analytics dashboards for internal and external use</li>
-                <li>Building bespoke charts and mapping software using spatial data APIs</li>
-              </ul>
-              <div className="skills-icons grid grid-cols-4 justify-center gap-md mt-md text-xs">
-                <div className="flex flex-col items-center">
-                  <PowerBiLogo className="h-lg"/>
-                  <span>PowerBI</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <D3Logo className="h-lg"/>
-                  <span>D3</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <HighchartsLogo className="h-lg"/>
-                  <span className="text-center">Highcharts</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <SiArcgis className="h-lg w-lg" fill="rgb(75,130,230)"/>
-                  <span className="text-center">ArcGIS</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
