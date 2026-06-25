@@ -254,29 +254,70 @@ export const PowerBiLogo = (props: SVGProps<SVGSVGElement>) => (
 
 export const HighchartsLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} viewBox="0 0 205 205">
-    <g transform="translate(0,3.41400146484375) scale(3)" id="symbol-logolab"> 
+    <g transform="translate(0,3.41400146484375) scale(3)" id="symbol-logolab">
       <polygon
-      strokeLinejoin="round" fillOpacity="1" stroke="#383836" strokeWidth="0" id="svg_2"
-      points="41.53900146484375,0 30.315000534057617,26.209999084472656 15.566999435424805,60.650997161865234 49.85900115966797,46.16499710083008 68.02299499511719,38.49300003051758"
-      fill="#8087E8"/>
-      <polygon strokeLinejoin="round" fillOpacity="1" stroke="#383836" strokeWidth="0" id="svg_3"
-               points="47.25799560546875,31.729999542236328 49.86000061035156,46.16499710083008 68.02400207519531,38.49300003051758"
-               fill="#30426B"/>
-      <polygon strokeLinejoin="round" fillOpacity="1" stroke="#383836" strokeWidth="0" id="svg_4"
-               points="41.53900146484375,0 47.25799560546875,31.730998992919922 68.02299499511719,38.49300003051758"
-               fill="#6699A1"/>
-      <polygon strokeLinejoin="round" fillOpacity="1" stroke="#383836" strokeWidth="0" id="svg_5"
-               points="47.25799560546875,31.729999542236328 68.02400207519531,38.49300003051758 30.31599998474121,26.208999633789062 15.566999435424805,60.650997161865234 49.86000061035156,46.16499710083008"
-               fill="#78758C"/>
-      <polygon strokeLinejoin="round" fillOpacity="1" stroke="#383836" strokeWidth="0" id="svg_6"
-               points="15.566999435424805,60.650997161865234 30.315000534057617,26.209999084472656 0,16.334999084472656"
-               fill="#A3EDBA"/>
-      <polygon strokeLinejoin="round" fillOpacity="1" stroke="#383836" strokeWidth="0" id="svg_7"
-               points="49.86000061035156,46.16499710083008 53.185997009277344,64.6099967956543 68.02400207519531,38.49300003051758"
-               fill="#6699A1"/>
-      <polygon strokeLinejoin="round" fillOpacity="1" stroke="#383836" strokeWidth="0" id="svg_8"
-               points="41.53900146484375,0 30.315000534057617,26.209999084472656 47.25799560546875,31.730998992919922"
-               fill="#8087E8"/>
+        strokeLinejoin="round"
+        fillOpacity="1"
+        stroke="#383836"
+        strokeWidth="0"
+        id="svg_2"
+        points="41.53900146484375,0 30.315000534057617,26.209999084472656 15.566999435424805,60.650997161865234 49.85900115966797,46.16499710083008 68.02299499511719,38.49300003051758"
+        fill="#8087E8"
+      />
+      <polygon
+        strokeLinejoin="round"
+        fillOpacity="1"
+        stroke="#383836"
+        strokeWidth="0"
+        id="svg_3"
+        points="47.25799560546875,31.729999542236328 49.86000061035156,46.16499710083008 68.02400207519531,38.49300003051758"
+        fill="#30426B"
+      />
+      <polygon
+        strokeLinejoin="round"
+        fillOpacity="1"
+        stroke="#383836"
+        strokeWidth="0"
+        id="svg_4"
+        points="41.53900146484375,0 47.25799560546875,31.730998992919922 68.02299499511719,38.49300003051758"
+        fill="#6699A1"
+      />
+      <polygon
+        strokeLinejoin="round"
+        fillOpacity="1"
+        stroke="#383836"
+        strokeWidth="0"
+        id="svg_5"
+        points="47.25799560546875,31.729999542236328 68.02400207519531,38.49300003051758 30.31599998474121,26.208999633789062 15.566999435424805,60.650997161865234 49.86000061035156,46.16499710083008"
+        fill="#78758C"
+      />
+      <polygon
+        strokeLinejoin="round"
+        fillOpacity="1"
+        stroke="#383836"
+        strokeWidth="0"
+        id="svg_6"
+        points="15.566999435424805,60.650997161865234 30.315000534057617,26.209999084472656 0,16.334999084472656"
+        fill="#A3EDBA"
+      />
+      <polygon
+        strokeLinejoin="round"
+        fillOpacity="1"
+        stroke="#383836"
+        strokeWidth="0"
+        id="svg_7"
+        points="49.86000061035156,46.16499710083008 53.185997009277344,64.6099967956543 68.02400207519531,38.49300003051758"
+        fill="#6699A1"
+      />
+      <polygon
+        strokeLinejoin="round"
+        fillOpacity="1"
+        stroke="#383836"
+        strokeWidth="0"
+        id="svg_8"
+        points="41.53900146484375,0 30.315000534057617,26.209999084472656 47.25799560546875,31.730998992919922"
+        fill="#8087E8"
+      />
     </g>
   </svg>
 )

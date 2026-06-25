@@ -63,11 +63,11 @@ h4 {
 }
 .download-pdf:hover {
   border-color: #3e5c9a;
-  width: 112px
+  width: 112px;
 }
 .portfolio-btn:hover {
   border-color: #3e5c9a;
-  width: 112px
+  width: 112px;
 }
 .expand-btn span {
   white-space: nowrap;
@@ -78,6 +78,24 @@ h4 {
   .portfolio-btn {
     width: 112px;
   }
+  a {
+    color: black !important;
+  }
+  .sidebar {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}
+
+.sidebar {
+  background: #001235;
+  color: #fff;
+}
+.sidebar a {
+  color: #55acee;
+}
+.sidebar a:hover {
+  color: #3e5c9a;
 }
 
 a {
@@ -87,14 +105,9 @@ a {
 a:hover {
   color: #3e5c9a;
 }
-.sidebar a {
-  color: #55acee;
-}
-.sidebar a:hover {
-  color: #3e5c9a;
-}
+
 hr {
-  border-color: #D0D5DD;
+  border-color: #d0d5dd;
   margin: 12px 0 12px 0;
 }
 ul li {
@@ -126,10 +139,7 @@ span {
 .background {
   background: #053a7d;
 }
-.sidebar {
-  background: #001235;
-  color: #fff;
-}
+
 .paper {
   background: #ffffff;
 }
